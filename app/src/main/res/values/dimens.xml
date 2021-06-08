@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_fist_bottom">30dp</dimen>
+    <dimen name="greeting_text_size">20sp</dimen>
+    <dimen name="margin_text_start_end">24dp</dimen>
+    <dimen name="margin_text_under_greeting">16dp</dimen>
+    <dimen name="text_under_greeting_size">16sp</dimen>
+    <dimen name="margin_reg_button">32dp</dimen>
+    <dimen name="registration_button_size">14sp</dimen>
+    <dimen name="margin_enter">42dp</dimen>
+</resources>
