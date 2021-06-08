@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <gradient
+        android:angle="0"
+        android:endColor="@color/end_registration_button_color"
+        android:startColor="@color/start_registration_button_color"
+        android:type="linear" />
+
+    <corners android:radius="4dp"/>
+</shape>
