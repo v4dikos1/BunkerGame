@@ -1,9 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WelcomeActivity">
+    tools:context=".WelcomeActivity"
+    android:orientation="vertical"
+    android:gravity="center">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/image_fist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_thirty"
+        android:src="@drawable/ic_biohazard_180px" />
+
+    <TextView
+        android:id="@+id/greeting_text"
+        style="@style/TextStyle"
+        android:layout_marginStart="@dimen/margin_twenty_four"
+        android:layout_marginEnd="@dimen/margin_twenty_four"
+        android:fontFamily="@font/gilroy_semi_bold"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/welcome"
+        android:textColor="@color/greeting_text_color"
+        android:textSize="@dimen/text_twenty" />
+
+    <TextView
+        android:id="@+id/text_under_greeting"
+        style="@style/TextStyle"
+        android:layout_marginStart="@dimen/margin_twenty_four"
+        android:layout_marginTop="@dimen/margin_sixteen"
+        android:layout_marginEnd="@dimen/margin_twenty_four"
+        android:fontFamily="@font/gilroy_regular"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/more_info"
+        android:textSize="@dimen/text_sixteen" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registration_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_twenty_four"
+        android:layout_marginTop="@dimen/margin_thirty_two"
+        android:layout_marginEnd="@dimen/margin_twenty_four"
+        android:background="@drawable/gradient"
+        android:fontFamily="@font/gilroy_semi_bold"
+        android:text="@string/continue_btn"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_fourteen" />
+
+</LinearLayout>

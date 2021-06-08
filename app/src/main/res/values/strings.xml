@@ -11,4 +11,6 @@
     <string name="name_field">Ваше имя</string>
     <string name="password">Пароль</string>
     <string name="repeat_password">Повторите пароль</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="more_info">Подробнее с правилами игры и функциями приложения вы можете ознакомиться в соответствующих разделах меню</string>
 </resources>
