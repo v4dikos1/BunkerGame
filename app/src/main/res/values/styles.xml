@@ -6,4 +6,10 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/greeting_text_color</item>
     </style>
+    
+    <style name="Widget.MaterialComponents.Button.OutlinedButton.Icon.OutlinedButtonCustom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
 </resources>

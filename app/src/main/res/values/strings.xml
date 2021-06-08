@@ -4,4 +4,11 @@
     <string name="under_greeting">Теперь дискусионная игра в твоём телефоне. Докажи, что именно ты можешь попасть в бункер</string>
     <string name="registration">Зарегистрироваться</string>
     <string name="enter">Войти</string>
+    <string name="back_button">Назад</string>
+    <string name="reg">Регистрация</string>
+    <string name="continue_btn">Продолжить</string>
+    <string name="google">Регистрация через Google аккаунт</string>
+    <string name="name_field">Ваше имя</string>
+    <string name="password">Пароль</string>
+    <string name="repeat_password">Повторите пароль</string>
 </resources>

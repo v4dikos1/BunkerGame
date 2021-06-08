@@ -10,4 +10,7 @@
     <color name="greeting_text_color">#313131</color>
     <color name="start_registration_button_color">#16222A</color>
     <color name="end_registration_button_color">#3A6073</color>
+    <color name="gray">#99000000</color>
+    <color name="start_continue_button_color">#8016222A</color>
+    <color name="end_continue_button_color">#803A6073</color>
 </resources>
