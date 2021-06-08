@@ -14,55 +14,57 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/margin_fist_bottom"
+        android:layout_marginBottom="@dimen/margin_thirty"
         android:src="@drawable/ic_fist_180px" />
 
     <TextView
         android:id="@+id/greeting_text"
         style="@style/TextStyle"
-        android:layout_marginStart="@dimen/margin_text_start_end"
-        android:layout_marginEnd="@dimen/margin_text_start_end"
+        android:layout_marginStart="@dimen/margin_twenty_four"
+        android:layout_marginEnd="@dimen/margin_twenty_four"
         android:fontFamily="@font/gilroy_semi_bold"
         android:lineSpacingExtra="4sp"
         android:text="@string/greeting"
         android:textColor="@color/greeting_text_color"
-        android:textSize="@dimen/greeting_text_size" />
+        android:textSize="@dimen/text_twenty" />
 
     <TextView
         android:id="@+id/text_under_greeting"
         style="@style/TextStyle"
-        android:layout_marginStart="@dimen/margin_text_start_end"
-        android:layout_marginTop="@dimen/margin_text_under_greeting"
-        android:layout_marginEnd="@dimen/margin_text_start_end"
+        android:layout_marginStart="@dimen/margin_twenty_four"
+        android:layout_marginTop="@dimen/margin_sixteen"
+        android:layout_marginEnd="@dimen/margin_twenty_four"
         android:fontFamily="@font/gilroy_regular"
         android:lineSpacingExtra="5sp"
         android:text="@string/under_greeting"
-        android:textSize="@dimen/text_under_greeting_size" />
+        android:textSize="@dimen/text_sixteen" />
 
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/registration_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_text_start_end"
-        android:layout_marginTop="@dimen/margin_reg_button"
-        android:layout_marginEnd="@dimen/margin_text_start_end"
+        android:layout_marginStart="@dimen/margin_twenty_four"
+        android:layout_marginTop="@dimen/margin_thirty_two"
+        android:layout_marginEnd="@dimen/margin_twenty_four"
         android:background="@drawable/gradient"
         android:fontFamily="@font/gilroy_semi_bold"
         android:text="@string/registration"
+        android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="@dimen/registration_button_size" />
+        android:textSize="@dimen/text_fourteen" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/enter_text"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_enter"
+        android:layout_marginTop="@dimen/margin_forty_two"
         android:fontFamily="@font/gilroy_semi_bold"
         android:text="@string/enter"
+        android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textSize="@dimen/registration_button_size"
+        android:textSize="@dimen/text_fourteen"
         app:rippleColor="@color/black" />
 
 

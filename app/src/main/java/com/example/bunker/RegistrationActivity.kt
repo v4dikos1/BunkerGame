@@ -5,15 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class StartActivity : AppCompatActivity() {
-
-
+class RegistrationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_start)
+        setContentView(R.layout.activity_registration)
 
-        findViewById<Button>(R.id.registration_btn).setOnClickListener {
-            val intent = Intent(this, RegistrationActivity::class.java)
+        findViewById<Button>(R.id.back_button).setOnClickListener {
+            val intent = Intent(this, StartActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
         }
     }
