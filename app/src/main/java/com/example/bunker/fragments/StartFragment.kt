@@ -33,7 +33,6 @@ class StartFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_start, container, false)
     }
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -42,9 +41,10 @@ class StartFragment : Fragment() {
         view.findViewById<Button>(R.id.registration_btn).setOnClickListener {
             fc.replaceFragment(RegistrationFragment())
         }
+
         view.findViewById<Button>(R.id.enter_button).setOnClickListener {
             fc.clearBackStack()
-            fc.replaceFragmentNow(WelcomeFragment())
+            fc.replaceFragment(WelcomeFragment())
         }
     }
 

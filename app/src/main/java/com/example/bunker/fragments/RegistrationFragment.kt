@@ -39,7 +39,7 @@ class RegistrationFragment : Fragment() {
 
         view.findViewById<Button>(R.id.continue_btn).setOnClickListener {
             fc.clearBackStack()
-            fc.replaceFragmentNow(WelcomeFragment())
+            fc.replaceFragment(WelcomeFragment())
         }
 
         view.findViewById<Button>(R.id.back_button).setOnClickListener {

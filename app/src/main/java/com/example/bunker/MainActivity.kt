@@ -18,9 +18,8 @@ class MainActivity : AppCompatActivity(), FragmentChangeListener {
         supportFragmentManager
             .beginTransaction()
             .replace(R.id.main_container, StartFragment(), StartFragment.toString())
-            .addToBackStack(StartFragment.toString())
+            //.addToBackStack(StartFragment.toString())
             .commit()
-
     }
 
     override fun replaceFragment(fragment: Fragment) {
@@ -44,7 +43,7 @@ class MainActivity : AppCompatActivity(), FragmentChangeListener {
     }
 
     override fun clearBackStack() {
-        supportFragmentManager.popBackStack(StartFragment.toString(), FragmentManager.POP_BACK_STACK_INCLUSIVE)
+        supportFragmentManager.popBackStack()
     }
 
 

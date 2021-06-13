@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WelcomeActivity"
     android:orientation="vertical"
     android:gravity="center">
 
@@ -39,7 +38,7 @@
         android:textSize="@dimen/text_sixteen" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/registration_btn"
+        android:id="@+id/continue_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_twenty_four"
