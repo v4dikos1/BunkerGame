@@ -1,10 +1,12 @@
 package com.example.bunker
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import com.example.bunker.fragments.FragmentChangeListener
+import com.example.bunker.fragments.StartFragment
 
 class MainActivity : AppCompatActivity(), FragmentChangeListener {
 
@@ -15,7 +17,8 @@ class MainActivity : AppCompatActivity(), FragmentChangeListener {
 
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.main_container, StartFragment())
+            .replace(R.id.main_container, StartFragment(), StartFragment.toString())
+            .addToBackStack(StartFragment.toString())
             .commit()
 
     }
@@ -26,6 +29,22 @@ class MainActivity : AppCompatActivity(), FragmentChangeListener {
             .replace(R.id.main_container, fragment, fragment.toString())
             .addToBackStack(fragment.toString())
             .commit()
+    }
+
+    override fun replaceFragmentNow(fragment: Fragment) {
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.main_container, fragment, fragment.toString())
+            .commitNow()
+    }
+
+    override fun popBackFragment(fragment: Fragment) {
+        supportFragmentManager
+            .popBackStack()
+    }
+
+    override fun clearBackStack() {
+        supportFragmentManager.popBackStack(StartFragment.toString(), FragmentManager.POP_BACK_STACK_INCLUSIVE)
     }
 
 
