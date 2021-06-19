@@ -13,7 +13,7 @@ private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
 
-class WelcomeFragment : Fragment() {
+class GameFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
@@ -29,7 +29,7 @@ class WelcomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_welcome, container, false)
+        return inflater.inflate(R.layout.fragment_game, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -37,17 +37,11 @@ class WelcomeFragment : Fragment() {
 
         val fc: FragmentChangeListener = activity as FragmentChangeListener
 
-        view.findViewById<Button>(R.id.continue_btn).setOnClickListener {
-            fc.replaceFragment(GameFragment())
-            fc.setVisibleToolbar()
-        }
-
     }
-
     companion object {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            WelcomeFragment().apply {
+            GameFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

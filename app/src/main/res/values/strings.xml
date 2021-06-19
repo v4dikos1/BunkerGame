@@ -13,4 +13,6 @@
     <string name="repeat_password">Повторите пароль</string>
     <string name="welcome">Добро пожаловать!</string>
     <string name="more_info">Подробнее с правилами игры и функциями приложения вы можете ознакомиться в соответствующих разделах меню</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Домой</string>
 </resources>

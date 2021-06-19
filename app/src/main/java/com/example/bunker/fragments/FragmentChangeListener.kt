@@ -7,4 +7,5 @@ interface FragmentChangeListener {
    fun replaceFragmentNow(fragment: Fragment)
    fun popBackFragment(fragment: Fragment)
    fun clearBackStack()
+   fun setVisibleToolbar()
 }
