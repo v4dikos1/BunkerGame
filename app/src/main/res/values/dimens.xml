@@ -10,4 +10,6 @@
     <dimen name="margin_forty_two">42dp</dimen>
     <dimen name="margin_twenty">20dp</dimen>
     <dimen name="choose_settings_width">180dp</dimen>
+    <dimen name="margin_one_hundred">100dp</dimen>
+    <dimen name="eight">8dp</dimen>
 </resources>
