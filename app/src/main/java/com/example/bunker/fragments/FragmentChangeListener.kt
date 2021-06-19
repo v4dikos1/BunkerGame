@@ -8,4 +8,5 @@ interface FragmentChangeListener {
    fun popBackFragment(fragment: Fragment)
    fun clearBackStack()
    fun setVisibleToolbar()
+   fun setInvisibleToolbar()
 }

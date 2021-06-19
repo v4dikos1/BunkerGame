@@ -15,4 +15,17 @@
     <string name="more_info">Подробнее с правилами игры и функциями приложения вы можете ознакомиться в соответствующих разделах меню</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Домой</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="create_game_id">Создать игру</string>
+    <string name="choose_settings">Выберите подходящие настройки и начните новую игру</string>
+    <string name="new_game_text">Новая игра</string>
+    <string name="connect">Присоединиться</string>
+    <string name="connect_to_game_text">Зайдите по ключу доступа в уже созданную игру</string>
+    <string name="connect_button_text">Войти</string>
+    <string name="rules">Правила игры</string>
+    <string name="settings">Настройки</string>
+    <string name="about">О разработчиках</string>
+    <string name="privacy_policy">Политика конфиденциальности</string>
+    <string name="exit">Выход</string>
 </resources>

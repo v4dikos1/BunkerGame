@@ -86,6 +86,10 @@ class MainActivity : AppCompatActivity(), FragmentChangeListener {
         toolbar.visibility = View.VISIBLE
     }
 
+    override fun setInvisibleToolbar() {
+        toolbar.visibility = View.GONE
+    }
+
     override fun replaceFragmentNow(fragment: Fragment) {
         supportFragmentManager
             .beginTransaction()
