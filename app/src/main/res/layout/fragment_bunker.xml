@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.DisasterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/apocalypse_button"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_twenty_four"
+                android:fontFamily="@font/gilroy_medium"
+                android:text="@string/apocalypse"
+                android:textColor="#87A2B3"
+                android:textSize="@dimen/text_sixteen" />
+
+            <Button
+                android:id="@+id/bunker_button"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_twenty_four"
+                android:fontFamily="@font/gilroy_medium"
+                android:text="@string/bunker"
+                android:textColor="#223642"
+                android:textSize="@dimen/text_sixteen" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="@dimen/margin_twenty_four"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_twenty_four"
+            android:layout_marginEnd="@dimen/margin_twenty_four"
+            android:fontFamily="@font/gilroy_semi_bold"
+            android:text="@string/k20"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_sixteen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_twenty_four"
+            android:layout_marginStart="@dimen/margin_twenty_four"
+            android:layout_marginEnd="@dimen/margin_twenty_four"
+            android:fontFamily="@font/gilroy_regular"
+            android:text="@string/bunker_decription"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_sixteen" />
+
+    </LinearLayout>
+
+</ScrollView>

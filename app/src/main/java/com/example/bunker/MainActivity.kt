@@ -3,6 +3,7 @@ package com.example.bunker
 import android.graphics.ColorFilter
 import android.graphics.PorterDuff
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
@@ -70,6 +71,24 @@ class MainActivity : AppCompatActivity(), FragmentChangeListener {
                         .replace(R.id.main_container, PeopleFragment(), PeopleFragment.toString())
                         .commit()
 
+                    true
+                }
+                R.id.disaster_page -> {
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(
+                            R.id.main_container,
+                            DisasterFragment(),
+                            DisasterFragment.toString()
+                        )
+                        .commit()
+                    true
+                }
+                R.id.log_page -> {
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.main_container, LogFragment(), LogFragment.toString())
+                        .commit()
                     true
                 }
                 else -> false
