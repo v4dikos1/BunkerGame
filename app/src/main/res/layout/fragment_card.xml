@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CardFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_twenty_four"
+        android:layout_marginEnd="@dimen/margin_twenty_four"
+        android:backgroundTint="#F7F6F7">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/your_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_twenty_four"
+                android:fontFamily="@font/gilroy_semi_bold"
+                android:text="@string/you"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_sixteen"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/isExcluded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_twenty_four"
+                android:fontFamily="@font/gilroy_semi_bold"
+                android:text="@string/excluded"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_sixteen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/icon_profession"
+                style="@style/ImageStyle"
+                android:src="@drawable/ic_profession"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/your_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sixteen"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="@string/profession"
+                android:textSize="@dimen/text_twelve"
+                app:layout_constraintStart_toEndOf="@id/icon_profession"
+                app:layout_constraintTop_toTopOf="@id/icon_profession" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sixteen"
+                android:fontFamily="@font/gilroy_semi_bold"
+                android:text="@string/doctor"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_sixteen"
+                app:layout_constraintBottom_toBottomOf="@id/icon_profession"
+                app:layout_constraintStart_toEndOf="@id/icon_profession" />
+
+
+            <ImageView
+                android:id="@+id/icon_phobia"
+                style="@style/ImageStyle"
+                android:src="@drawable/ic_fobbies"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/icon_profession" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sixteen"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="@string/phobia"
+                android:textSize="@dimen/text_twelve"
+                app:layout_constraintStart_toEndOf="@id/icon_phobia"
+                app:layout_constraintTop_toTopOf="@id/icon_phobia" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sixteen"
+                android:fontFamily="@font/gilroy_semi_bold"
+                android:text="@string/minus"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_sixteen"
+                app:layout_constraintBottom_toBottomOf="@id/icon_phobia"
+                app:layout_constraintStart_toEndOf="@id/icon_phobia" />
+
+
+            <ImageView
+                android:id="@+id/icon_quality"
+                style="@style/ImageStyle"
+                android:src="@drawable/ic_characteristics"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/icon_phobia" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sixteen"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="@string/human_quality"
+                android:textSize="@dimen/text_twelve"
+                app:layout_constraintStart_toEndOf="@id/icon_quality"
+                app:layout_constraintTop_toTopOf="@id/icon_quality" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sixteen"
+                android:fontFamily="@font/gilroy_semi_bold"
+                android:text="@string/communicative"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_sixteen"
+                app:layout_constraintBottom_toBottomOf="@id/icon_quality"
+                app:layout_constraintStart_toEndOf="@id/icon_quality" />
+
+
+            <ImageView
+                android:id="@+id/icon_health"
+                style="@style/ImageStyle"
+                android:src="@drawable/ic_health"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/icon_quality" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sixteen"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="@string/health"
+                android:textSize="@dimen/text_twelve"
+                app:layout_constraintStart_toEndOf="@id/icon_health"
+                app:layout_constraintTop_toTopOf="@id/icon_health" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sixteen"
+                android:fontFamily="@font/gilroy_semi_bold"
+                android:text="@string/minus"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_sixteen"
+                app:layout_constraintBottom_toBottomOf="@id/icon_health"
+                app:layout_constraintStart_toEndOf="@id/icon_health" />
+
+
+            <ImageView
+                android:id="@+id/icon_hobby"
+                style="@style/ImageStyle"
+                android:src="@drawable/ic_hobbies"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/icon_health" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sixteen"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="@string/hobby"
+                android:textSize="@dimen/text_twelve"
+                app:layout_constraintStart_toEndOf="@id/icon_hobby"
+                app:layout_constraintTop_toTopOf="@id/icon_hobby" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sixteen"
+                android:fontFamily="@font/gilroy_semi_bold"
+                android:text="@string/minus"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_sixteen"
+                app:layout_constraintBottom_toBottomOf="@id/icon_hobby"
+                app:layout_constraintStart_toEndOf="@id/icon_hobby" />
+
+            <ImageView
+                android:id="@+id/icon_skills"
+                style="@style/ImageStyle"
+                android:src="@drawable/ic_knowledge"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/icon_hobby" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sixteen"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="@string/skill"
+                android:textSize="@dimen/text_twelve"
+                app:layout_constraintStart_toEndOf="@id/icon_skills"
+                app:layout_constraintTop_toTopOf="@id/icon_skills" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sixteen"
+                android:fontFamily="@font/gilroy_semi_bold"
+                android:text="@string/minus"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_sixteen"
+                app:layout_constraintBottom_toBottomOf="@id/icon_skills"
+                app:layout_constraintStart_toEndOf="@id/icon_skills" />
+
+            <ImageView
+                android:id="@+id/icon_biology"
+                style="@style/ImageStyle"
+                android:layout_marginBottom="@dimen/margin_twenty_four"
+                android:src="@drawable/ic_biology"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/icon_skills" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sixteen"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="@string/biology"
+                android:textSize="@dimen/text_twelve"
+                app:layout_constraintStart_toEndOf="@id/icon_biology"
+                app:layout_constraintTop_toTopOf="@id/icon_biology" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sixteen"
+                android:fontFamily="@font/gilroy_semi_bold"
+                android:text="@string/minus"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_sixteen"
+                app:layout_constraintBottom_toBottomOf="@id/icon_biology"
+                app:layout_constraintStart_toEndOf="@id/icon_biology" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>
