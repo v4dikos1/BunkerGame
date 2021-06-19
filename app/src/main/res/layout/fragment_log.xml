@@ -1,9 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.LogFragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="@dimen/margin_twenty_four"
+            android:layout_marginBottom="@dimen/eight"
+            android:fontFamily="@font/gilroy_regular"
+            android:text="@string/_22_15"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_twelve" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_twenty_four"
+            android:layout_marginEnd="@dimen/margin_twenty_four"
+            android:backgroundTint="@color/light_gray"
+            app:cardCornerRadius="@dimen/eight">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_twenty_four"
+                    android:fontFamily="@font/gilroy_semi_bold"
+                    android:text="Михайлов Игорь"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_sixteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_twenty_four"
+                    android:layout_marginEnd="@dimen/margin_twenty_four"
+                    android:layout_marginBottom="@dimen/margin_twenty_four"
+                    android:fontFamily="@font/gilroy_regular"
+                    android:text="@string/log_one"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_twelve" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="@dimen/margin_twenty_four"
+            android:layout_marginBottom="@dimen/eight"
+            android:fontFamily="@font/gilroy_regular"
+            android:text="@string/_22_34"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_twelve" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_twenty_four"
+            android:layout_marginEnd="@dimen/margin_twenty_four"
+            android:backgroundTint="@color/light_gray"
+            app:cardCornerRadius="@dimen/eight">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_twenty_four"
+                    android:fontFamily="@font/gilroy_semi_bold"
+                    android:text="Игра"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_sixteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_twenty_four"
+                    android:layout_marginEnd="@dimen/margin_twenty_four"
+                    android:layout_marginBottom="@dimen/margin_twenty_four"
+                    android:fontFamily="@font/gilroy_regular"
+                    android:text="@string/log_two"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_twelve" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="@dimen/margin_twenty_four"
+            android:layout_marginBottom="@dimen/eight"
+            android:fontFamily="@font/gilroy_regular"
+            android:text="@string/_22_35"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_twelve" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_twenty_four"
+            android:layout_marginEnd="@dimen/margin_twenty_four"
+            android:backgroundTint="@color/light_gray"
+            app:cardCornerRadius="@dimen/eight"
+            android:layout_marginBottom="@dimen/margin_twenty_four">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_twenty_four"
+                    android:fontFamily="@font/gilroy_semi_bold"
+                    android:text="Исхаков Вадим"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_sixteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_twenty_four"
+                    android:layout_marginEnd="@dimen/margin_twenty_four"
+                    android:layout_marginBottom="@dimen/margin_twenty_four"
+                    android:fontFamily="@font/gilroy_regular"
+                    android:text="@string/log_three"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_twelve" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+</ScrollView>

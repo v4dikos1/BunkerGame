@@ -20,4 +20,5 @@
     <color name="hobby_color">#143691AD</color>
     <color name="skill_color">#145282FF</color>
     <color name="biology_color">#12FFA24B</color>
+    <color name="light_gray">#F4F4F4</color>
 </resources>

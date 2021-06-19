@@ -108,6 +108,24 @@ class MainActivity : AppCompatActivity(), FragmentChangeListener {
                     findViewById<BottomNavigationView>(R.id.bottom_navigation).visibility =
                         View.GONE
                 }
+                R.id.settings -> {
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.main_container, SettingsFragment())
+                        .commit()
+                }
+                R.id.rules -> {
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.main_container, RulesFragment())
+                        .commit()
+                }
+                R.id.about -> {
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.main_container, AboutFragment())
+                        .commit()
+                }
             }
             true
         }
