@@ -49,4 +49,9 @@
     <string name="man">Мужчина 25 лет, гетеросексуальный</string>
     <string name="specials">Специальные условия</string>
     <string name="special_card_text_one">Ты можешь поменять свою характеристику “Дополнительная информация” на любую другую</string>
+    <string name="players">Игроки</string>
+    <string name="you">Вы</string>
+    <string name="excluded">Исключен</string>
+    <string name="minus">-</string>
+    <string name="biology">Биология</string>
 </resources>

@@ -15,10 +15,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import com.example.bunker.fragments.FragmentChangeListener
-import com.example.bunker.fragments.GameFragment
-import com.example.bunker.fragments.StartFragment
-import com.example.bunker.fragments.WelcomeFragment
+import com.example.bunker.fragments.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 
@@ -57,13 +54,22 @@ class MainActivity : AppCompatActivity(), FragmentChangeListener {
 
         toolbar.visibility = View.GONE
 
-        BottomNavigationView.OnNavigationItemSelectedListener { item ->
+        findViewById<BottomNavigationView>(R.id.bottom_navigation).setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.person_page -> {
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.main_container, InGameFragment(), InGameFragment.toString())
+                        .commit()
+
                     true
                 }
                 R.id.people_page -> {
-                    // Respond to navigation item 2 click
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.main_container, PeopleFragment(), PeopleFragment.toString())
+                        .commit()
+
                     true
                 }
                 else -> false

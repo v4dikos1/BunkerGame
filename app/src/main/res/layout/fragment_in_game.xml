@@ -493,7 +493,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/gilroy_regular"
                     android:paddingTop="@dimen/margin_twenty_four"
-                    android:text="@string/hobby"
+                    android:text="@string/biology"
                     android:textColor="@color/gray"
                     android:textSize="@dimen/text_twelve"
                     app:layout_constraintStart_toEndOf="@id/biology_img"
