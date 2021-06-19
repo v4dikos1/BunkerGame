@@ -13,4 +13,11 @@
     <color name="gray">#99000000</color>
     <color name="start_continue_button_color">#8016222A</color>
     <color name="end_continue_button_color">#803A6073</color>
+    <color name="profession_color">#0D2F79BD</color>
+    <color name="phobia_color">#0DB22FBD</color>
+    <color name="human_quality_color">#0DEF2C7E</color>
+    <color name="health_color">#142BECA7</color>
+    <color name="hobby_color">#143691AD</color>
+    <color name="skill_color">#145282FF</color>
+    <color name="biology_color">#12FFA24B</color>
 </resources>

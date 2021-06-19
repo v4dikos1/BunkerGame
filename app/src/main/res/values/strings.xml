@@ -33,4 +33,20 @@
     <string name="leave_game_text">Покинуть игру</string>
     <string name="default_code">00000</string>
     <string name="start">Начать</string>
+    <string name="your_characteristics">Ваши характеристики</string>
+    <string name="profession">Профессия</string>
+    <string name="doctor">Врач</string>
+    <string name="phobia">Фобия</string>
+    <string name="claustrophobia">Клаустрофобия</string>
+    <string name="health">Состояние здоровья</string>
+    <string name="absolutely_healthy">Абсолютно здоров</string>
+    <string name="human_quality">Человеческое качество</string>
+    <string name="communicative">Общительный</string>
+    <string name="hobby">Хобби</string>
+    <string name="fishing">Рыбалка</string>
+    <string name="skill">Дополнительный навык</string>
+    <string name="five_languages">Знание 5 языков</string>
+    <string name="man">Мужчина 25 лет, гетеросексуальный</string>
+    <string name="specials">Специальные условия</string>
+    <string name="special_card_text_one">Ты можешь поменять свою характеристику “Дополнительная информация” на любую другую</string>
 </resources>
