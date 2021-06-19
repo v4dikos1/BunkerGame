@@ -19,6 +19,7 @@ import com.example.bunker.fragments.FragmentChangeListener
 import com.example.bunker.fragments.GameFragment
 import com.example.bunker.fragments.StartFragment
 import com.example.bunker.fragments.WelcomeFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity(), FragmentChangeListener {
@@ -28,7 +29,6 @@ class MainActivity : AppCompatActivity(), FragmentChangeListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         toolbar = findViewById(R.id.toolbar)
@@ -45,20 +45,6 @@ class MainActivity : AppCompatActivity(), FragmentChangeListener {
 
         val navigationView: NavigationView = findViewById(R.id.nav_view);
 
-        navigationView.setNavigationItemSelectedListener { item ->
-
-            drawerLayout.closeDrawer(GravityCompat.START)
-
-            when (item.itemId) {
-                R.id.home -> {
-                    supportFragmentManager
-                        .beginTransaction()
-                        .replace(R.id.main_container, GameFragment(), WelcomeFragment.toString())
-                        .commit()
-                }
-            }
-            true
-        }
 
         val color: Int = ContextCompat.getColor(this, R.color.black)
         toolbar.navigationIcon?.setColorFilter(color, PorterDuff.Mode.DST_ATOP)
@@ -70,6 +56,36 @@ class MainActivity : AppCompatActivity(), FragmentChangeListener {
             .commit()
 
         toolbar.visibility = View.GONE
+
+        BottomNavigationView.OnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.person_page -> {
+                    true
+                }
+                R.id.people_page -> {
+                    // Respond to navigation item 2 click
+                    true
+                }
+                else -> false
+            }
+        }
+        findViewById<BottomNavigationView>(R.id.bottom_navigation).visibility = View.GONE
+
+        navigationView.setNavigationItemSelectedListener { item ->
+            drawerLayout.closeDrawer(GravityCompat.START)
+
+            when (item.itemId) {
+                R.id.home -> {
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.main_container, GameFragment(), GameFragment.toString())
+                        .commit()
+                    findViewById<BottomNavigationView>(R.id.bottom_navigation).visibility =
+                        View.GONE
+                }
+            }
+            true
+        }
     }
 
     override fun replaceFragment(fragment: Fragment) {
@@ -87,6 +103,10 @@ class MainActivity : AppCompatActivity(), FragmentChangeListener {
 
     override fun setInvisibleToolbar() {
         toolbar.visibility = View.GONE
+    }
+
+    override fun setVisibleBottomNav() {
+        findViewById<BottomNavigationView>(R.id.bottom_navigation).visibility = View.VISIBLE
     }
 
     override fun replaceFragmentNow(fragment: Fragment) {

@@ -66,6 +66,7 @@ class CreateGameFragment : Fragment() {
         view.findViewById<Button>(R.id.start_btn).setOnClickListener {
             fc.replaceFragment(InGameFragment())
             fc.setVisibleToolbar()
+            fc.setVisibleBottomNav()
         }
     }
 

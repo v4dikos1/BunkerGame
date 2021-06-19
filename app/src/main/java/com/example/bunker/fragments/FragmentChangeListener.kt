@@ -9,4 +9,5 @@ interface FragmentChangeListener {
    fun clearBackStack()
    fun setVisibleToolbar()
    fun setInvisibleToolbar()
+   fun setVisibleBottomNav()
 }
