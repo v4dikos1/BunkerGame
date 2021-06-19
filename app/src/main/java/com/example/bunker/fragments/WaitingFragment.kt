@@ -13,12 +13,11 @@ import android.widget.TextView
 import android.widget.Toast
 import com.example.bunker.R
 
-
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
 
-class CreateGameFragment : Fragment() {
+class WaitingFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
@@ -34,7 +33,7 @@ class CreateGameFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_create_game, container, false)
+        return inflater.inflate(R.layout.fragment_waiting, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -62,17 +61,11 @@ class CreateGameFragment : Fragment() {
             clipBoard.setPrimaryClip(clip)
             Toast.makeText(context, "Код скопирован в буфер обмена", Toast.LENGTH_LONG).show()
         }
-
-        view.findViewById<Button>(R.id.start_btn).setOnClickListener {
-            fc.replaceFragment(InGameFragment())
-            fc.setVisibleToolbar()
-        }
     }
-
     companion object {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            CreateGameFragment().apply {
+            WaitingFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

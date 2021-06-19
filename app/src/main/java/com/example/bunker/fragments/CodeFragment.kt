@@ -37,8 +37,8 @@ class CodeFragment : Fragment() {
         val fc: FragmentChangeListener = activity as FragmentChangeListener
 
         view.findViewById<Button>(R.id.connect_btn).setOnClickListener {
-            fc.replaceFragmentNow(InGameFragment())
-            fc.setVisibleToolbar()
+            fc.replaceFragment(WaitingFragment())
+            fc.setInvisibleToolbar()
         }
 
         view.findViewById<Button>(R.id.back_button_2).setOnClickListener {

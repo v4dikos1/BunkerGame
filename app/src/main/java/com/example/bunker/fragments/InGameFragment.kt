@@ -30,6 +30,12 @@ class InGameFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_in_game, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val fc: FragmentChangeListener = activity as FragmentChangeListener
+
+    }
     companion object {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =

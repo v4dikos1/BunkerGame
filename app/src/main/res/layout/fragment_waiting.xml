@@ -215,23 +215,4 @@
 
 
     </ScrollView>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/start_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_twenty_four"
-        android:layout_marginStart="@dimen/margin_twenty_four"
-        android:layout_marginTop="@dimen/margin_thirty_two"
-        android:layout_marginEnd="@dimen/margin_twenty_four"
-        android:background="@drawable/gradient"
-        android:fontFamily="@font/gilroy_semi_bold"
-        android:text="@string/start"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_fourteen"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
