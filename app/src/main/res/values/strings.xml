@@ -28,4 +28,6 @@
     <string name="about">О разработчиках</string>
     <string name="privacy_policy">Политика конфиденциальности</string>
     <string name="exit">Выход</string>
+    <string name="enter_code_text">Введите код доступа от комнаты, в которую вы хотите войти</string>
+    <string name="enter_code">Код доступа</string>
 </resources>

@@ -23,12 +23,11 @@ import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity(), FragmentChangeListener {
 
-    private lateinit var  toolbar: androidx.appcompat.widget.Toolbar
+    private lateinit var toolbar: androidx.appcompat.widget.Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
 
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
@@ -44,24 +43,24 @@ class MainActivity : AppCompatActivity(), FragmentChangeListener {
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
-        val navigationView : NavigationView = findViewById(R.id.nav_view);
+        val navigationView: NavigationView = findViewById(R.id.nav_view);
 
         navigationView.setNavigationItemSelectedListener { item ->
 
             drawerLayout.closeDrawer(GravityCompat.START)
 
-            when (item.itemId){
+            when (item.itemId) {
                 R.id.home -> {
-                        supportFragmentManager
-                            .beginTransaction()
-                            .replace(R.id.main_container, WelcomeFragment(), WelcomeFragment.toString())
-                            .commit()
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.main_container, GameFragment(), WelcomeFragment.toString())
+                        .commit()
                 }
             }
             true
         }
 
-        val color : Int = ContextCompat.getColor(this, R.color.black)
+        val color: Int = ContextCompat.getColor(this, R.color.black)
         toolbar.navigationIcon?.setColorFilter(color, PorterDuff.Mode.DST_ATOP)
 
         supportFragmentManager
@@ -82,7 +81,7 @@ class MainActivity : AppCompatActivity(), FragmentChangeListener {
 
     }
 
-    override fun setVisibleToolbar(){
+    override fun setVisibleToolbar() {
         toolbar.visibility = View.VISIBLE
     }
 
